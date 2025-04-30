@@ -2,9 +2,9 @@ POST http://localhost:8000/api/register
 Content-Type: 'application/json'
 
     {
-        "name": "Paulo Doe",
-        "email": "manoellardfgfdgavfdgdfsgel@example.com",
+        "name": "Simão Doe",
+        "email": "simao@example.com",
         "telephone": "88999999999",
-        "type": "passager",
+        "type": "driver",
         "password": "12345678"
     }

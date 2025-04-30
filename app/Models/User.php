@@ -47,4 +47,11 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function vehicle():HasOne
+    {
+        return $this->hasOne(Vehicle::class);
+    }
+     
+
 }
