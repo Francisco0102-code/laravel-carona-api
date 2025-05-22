@@ -10,7 +10,8 @@ class Vehicle extends Model
         'brand',
         'model',
         'year',
-        'plate'
+        'plate',
+        'user_id'
     ];
 
     public function user():BelongsTo

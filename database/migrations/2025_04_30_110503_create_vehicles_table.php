@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('brand')->nullable();
             $table->string('model')->nullable();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade')->nullable();
             $table->string('year')->nullable();
             $table->string('plate')->nullable()->unique();
             $table->timestamps();
