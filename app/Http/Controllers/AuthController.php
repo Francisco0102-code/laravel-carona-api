@@ -72,10 +72,10 @@ class AuthController extends Controller
 
         if($request->type === 'driver'){
             $vehicle->user_id = $user->id;
-            $vehicle->brand = $request->brand;
-            $vehicle->model = $request->model;
-            $vehicle->year = $request->year;
-            $vehicle->plate = $request->plate;
+            $vehicle->brand = $request->marca;
+            $vehicle->model = $request->modelo;
+            $vehicle->year = $request->ano;
+            $vehicle->plate = $request->placa;
             $vehicle->save();   
         }
         
