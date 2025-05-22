@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CaronaController;
 use App\Models\User;
 
 Route::get('/', function (Request $request) {
@@ -12,3 +13,7 @@ Route::get('/', function (Request $request) {
 });
 
 Route::post('/register', [AuthController::class, 'store']);
+
+
+
+Route::post('/caronas', [CaronaController::class, 'store']);

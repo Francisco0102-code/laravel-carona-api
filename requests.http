@@ -3,12 +3,27 @@ Content-Type: 'application/json'
 
     {
         "name": "Vitor Doe",
-        "email": "vitor@example.com",
+        "email": "2s@example.com",
         "telephone": "88999999999",
         "type": "passager",
         "password": "12345678",
         "brand": "Ford",
         "model": "Fiesta",
         "year": 2020,
-        "plate": "ABC1234",
+        "plate": "ABC1234"
     }
+
+
+
+POST http://localhost:8000/api/caronas
+Content-Type: 'application/json'
+
+    {
+        "origin": "São Paulo",
+        "destination": "Rio de Janeiro",
+        "departure_time": "2023-10-01T10:00:00Z",
+        "available_seats": 3,
+        "price": 100.0,
+        "car_id": 1
+    }
+
