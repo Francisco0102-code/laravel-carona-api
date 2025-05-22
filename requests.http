@@ -2,9 +2,13 @@ POST http://localhost:8000/api/register
 Content-Type: 'application/json'
 
     {
-        "name": "Simão Doe",
-        "email": "simao@example.com",
+        "name": "Vitor Doe",
+        "email": "vitor@example.com",
         "telephone": "88999999999",
-        "type": "driver",
-        "password": "12345678"
+        "type": "passager",
+        "password": "12345678",
+        "brand": "Ford",
+        "model": "Fiesta",
+        "year": 2020,
+        "plate": "ABC1234",
     }

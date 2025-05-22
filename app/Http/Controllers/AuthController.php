@@ -39,7 +39,6 @@ class AuthController extends Controller
             $vehicle->year = $request->year;
             $vehicle->plate = $request->plate;
 
-
             $user->save();
             $vehicle->save();
         }
